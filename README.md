@@ -1,6 +1,6 @@
-# Linux Commands 
+# Linux Commands #### -top, ps, jos, kill-
 
--top, ps, jos, kill-
+
 
 ### top
 ---------
