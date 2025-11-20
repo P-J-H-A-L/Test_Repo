@@ -9,3 +9,10 @@ HELLO_WORLD
 
 
 `int main(void){printf("Hello World");}`
+
+
+``` Python
+print("Hello")
+print("World")
+
+```
