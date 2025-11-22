@@ -2,11 +2,11 @@
 **-top, ps, jos, kill-**
 
 
-### top
+### top 명령어
 ---------
 top : 시스템의 CPU, 메모리 사용량, 실행 중인 프로세스 목록을 실시간으로 갱신하며 보여준다.
 
-top명령어는 다음과 같이 실행할 수 있다.
+**top명령어의 실행법**
 
 `$ top`
 
@@ -58,7 +58,7 @@ top명령어는 다음과 같이 실행할 수 있다.
 
 ----
 
-하단 프로세스 영역
+**하단 프로세스 영역**
 
 | 컬럼명 | 의미 | 상세 설명|
 |-------|-------|---------|
@@ -74,4 +74,54 @@ top명령어는 다음과 같이 실행할 수 있다.
 |%MEM|Mem Usage|물리 메모리 사용 퍼센트|
 |TIME+|CPU Time|프로세스가 시작된 후 지금까지 CPU를 사용한 누적 시간|
 |COMMAND|Command|실행된 명령어의 이름|
+
+
+
+----------
+### ps 명령어
+------
+특정시점의 시스템에서 실행 중인 프로세스 목록을 스냅샷(Snapshot) 형태로 보여주는 명령어
+
+**ps명령어 사용법**
+
+`$ ps [option]`
+
+**ps명령어의 스타일**
+
+|스타일|명령어|설명|출력 내용|
+|------|-----|----|----|
+|System V|`$ ps -ef`|-e (모든 프로세스), -f (풀 포맷)의 조합으로, 프로세스의 부모/자식 관계까지 포함된 자세한 정보를 출력|UID, PID, PPID, C, STIME, TTY, TIME, CMD|
+|BSD|`$ ps aux`|모든 사용자의 (a), 터미널이 없는 (x), 자세한 정보 (u)를 출력|USER, PID, %CPU, %MEM, VSZ, RSS, TTY, STAT, START, TIME, COMMAND|
+
+**ps와 top의 차이점**
+
+* ps는 명령 실향 순간의 정보를 보여주지만 top는 실시간으로 갱신하여 정보를 보여준다.
+
+* ps는 명령 실행 후 즉시 종료 하지만 top는 q를 누르기 전까지 실행 상태를 유지한다.
+
+<img width="568" height="154" alt="image" src="https://github.com/user-attachments/assets/638750a6-f58a-4faa-a22d-283c03e7c07e" />
+
+*옵션이 없는 ps실행사진*
+
+<img width="1121" height="150" alt="image" src="https://github.com/user-attachments/assets/3f68a019-dd5b-4cfd-87b8-54846e4b1465" /> 
+
+*-ef옵션 ps실행사진*
+
+<img width="1478" height="155" alt="image" src="https://github.com/user-attachments/assets/2c769736-448d-44d1-af80-bbea82f154b8" />
+
+*aux옵션 ps실행사진*
+
+
+-----
+
+
+
+
+
+
+
+
+
+
+
 
